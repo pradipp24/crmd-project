@@ -1,0 +1,403 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: none
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  color: #75512e;
+  font-weight: 500;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.commonsec {
+  padding: 60px;
+}
+
+
+.bgrosegold {
+  background: #b76c6e !important;
+}
+
+.bgSunray {
+  background: #e5af5c;
+}
+
+.bggraydark {
+  background: #ded0bd;
+}
+
+.bggraylight {
+  background: #e8dccc;
+}
+
+.txtwhite {
+  color: #fff;
+}
+
+.txtbrown {
+  color: #6d3038;
+}
+
+.txtorange {
+  color: #e5af5c;
+}
+
+.txtlightgray {
+  color: #f5e9d3 !important;
+}
+
+/*paryushan parv*/
+.seclist li {
+  border-right: 3px solid #e5af5c;
+  padding-right: 0.5rem;
+}
+
+.seclist li a {
+  color: #fff;
+  text-shadow: 0 0 0.65px #efede7, 0 0 0.65px #efede7 !important;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.seclist li a:hover {
+  color: #e5af5c;
+}
+
+.shape.shapetop {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+
+.venuandtitle h4 {
+  color: #ac6b3f;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.scheduleevents .text-time {
+  color: #75512e;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.scheduleevents .time {
+  color: #75512e;
+  font-size: 20px;
+}
+
+.schedultitle {
+  color: #75512e;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.scheduleevents p {
+  text-align: left;
+  color: #75512e;
+  font-size: 16px;
+  margin: 0;
+}
+
+
+/*event-overlay*/
+.eventbox {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+.eventbox img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.eventbox::after {
+  content: '';
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  border: 1px solid #fff;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 90;
+  transition: all 0.3s;
+  transform: scale(1.1);
+  opacity: 0;
+  display: block;
+  opacity: 0;
+}
+
+.eventimgcontent {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 99;
+}
+
+.eventimgocntent_desc {
+  opacity: 0;
+  transform: scale(1.3);
+  transition: all 0.3s;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #fff;
+}
+
+.eventbox img {
+  width: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.eventbox .hover-overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.eventbox:hover img {
+  width: 100%;
+}
+
+.eventbox:hover::after {
+  opacity: 1;
+  transform: none;
+}
+
+.eventbox:hover .eventimgocntent_desc {
+  opacity: 1;
+  transform: none;
+}
+
+.eventbox:hover .hover-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/*detail schedule*/
+.TblDS {}
+
+.TblDS tr th {
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  border: none;
+}
+
+.TblDS tr td {
+  border: 2px solid #f5e9d3;
+  background: #e8dccc;
+}
+
+.detailschedulewrap .TblDS>:not(caption)>*>* {
+  padding: 0.5rem 1.5rem;
+}
+
+.ds_date {
+  color: #a15157;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.TblDS p {
+  color: #a15157;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.TblDS .dayname {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.ds_venue {
+  margin: 0 0 15px;
+}
+
+.dsday {
+  font-size: 20px;
+  font-weight: 500;
+  color: #75512e;
+  margin-top: 10px;
+  display: block;
+}
+
+.ds_title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #75512e;
+}
+
+.ds_subtitle {
+  color: #a15157;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.detailschedulewrap .TblDS td:first-child {
+  width: 15%;
+}
+
+.ds_content {
+  border-bottom: 1px solid #f5e9d3;
+  margin-bottom: 15px;
+}
+
+.labhtabs {
+  height: 100%;
+}
+
+.labhtabs .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background: #e8dccc;
+  color: #6d3038 !important;
+  border-radius: 0;
+}
+
+.labhtabs .nav-pills button.nav-link {
+  border-bottom: 2px solid #e8dccc;
+  font-size: 1.5rem;
+  color: #75512e;
+  font-weight: 500;
+  padding: 12px 20px;
+  position: relative;
+  border-radius: 0;
+}
+
+.labhtabs .nav-pills button.nav-link:last-child {
+  border-bottom: none;
+}
+
+.labhtabs .nav-pills button.nav-link small {
+  display: block;
+  font-size: 14px;
+}
+
+.labhtabs .nav-pills {
+  min-width: 30%;
+  text-align: left;
+  height: 100%;
+}
+
+.labhtabs .nav-pills button {
+  text-align: left;
+}
+
+.labhtabs .nav-pills button.nav-link .fa-arrow-right {
+  position: absolute;
+  right: 10px;
+  top: 22%;
+  width: 34px;
+  text-align: center;
+  height: 34px;
+  font-size: 14px;
+  line-height: 34px;
+  border: 1px solid #75512e;
+  border-radius: 100%;
+}
+
+.labhtabs .tab-content {
+  padding: 15px 15px;
+}
+
+.btn.btnwhite {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #a15157;
+}
+
+.btn.btnwhite:hover {
+  background-color: #a15157;
+  border: 1px solid #a15157;
+  color: #fff;
+}
+
+.ds_content:last-child {
+  border: none;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #e5af5c !important;
+}
+
+
+@media (max-width: 992px) {
+  .commonsec {
+    padding: 60px 0px;
+  }
+
+  .labhtabs .nav-pills {
+    min-width: 100%;
+  }
+
+  .labhtabs {
+    flex-wrap: wrap;
+  }
+
+  .labhtabs .nav-pills {
+    height: auto;
+  }
+
+  #v-pills-tabContent .row .col-lg-3 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #v-pills-tabContent .row .col-lg-9 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+}
